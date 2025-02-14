@@ -8,21 +8,20 @@ import img3 from "../public/3.jpg";
 const slides = [
   {
     id: 1,
-    title: "Xalqaro yuk tashish xizmati",
-    description:
-      "Dunyoning istalgan nuqtasiga yuklaringizni ishonchli yetkazib beramiz",
+    title: "International Freight Service",
+    description: "We deliver your goods reliably to any point in the world",
     image: img1,
   },
   {
     id: 2,
-    title: "Tezkor va sifatli logistika",
-    description: "Yuklaringizni optimal marshrutlar orqali tez yetkazish",
+    title: "Fast and Quality Logistics",
+    description: "Deliver your goods quickly through optimal routes",
     image: img2,
   },
   {
     id: 3,
-    title: "24/7 mijozlar xizmati",
-    description: "Professional mutaxassislarimiz doimo xizmatingizda",
+    title: "24/7 Customer Service",
+    description: "Our professional specialists are always at your service",
     image: img3,
   },
 ];
@@ -39,7 +38,7 @@ export default function HeroSlider() {
   };
 
   useEffect(() => {
-    const timer = setInterval(nextSlide, 5000); // Har 5 sekundda slide o&apos;zgaradi
+    const timer = setInterval(nextSlide, 5000); // Slide changes every 5 seconds
     return () => clearInterval(timer);
   }, []);
 
@@ -53,7 +52,7 @@ export default function HeroSlider() {
             className={`absolute top-0 left-0 w-full h-full transition-opacity duration-1000 ease-in-out
               ${index === currentSlide ? "opacity-100" : "opacity-0"}`}
           >
-            {/* Rasm */}
+            {/* Image */}
             <div className="absolute inset-0">
               <Image
                 src={slide.image}
@@ -61,11 +60,11 @@ export default function HeroSlider() {
                 fill
                 className="object-cover"
               />
-              {/* Qora gradient overlay */}
+              {/* Black gradient overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/50 to-transparent" />
             </div>
 
-            {/* Kontent */}
+            {/* Content */}
             <div className="relative h-full max-w-6xl mx-auto px-4 flex items-center">
               <div
                 className={`max-w-xl transition-all duration-1000 transform
@@ -82,7 +81,7 @@ export default function HeroSlider() {
                   {slide.description}
                 </p>
                 <button className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition transform hover:scale-105">
-                  Batafsil
+                  Learn More
                 </button>
               </div>
             </div>
