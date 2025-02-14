@@ -10,7 +10,7 @@ interface ServicesProps {
 const Services: React.FC<ServicesProps> = ({ bgService }) => {
   return (
     <div
-      id="xizmatlar"
+      id="services"
       className="py-20 bg-cover bg-center bg-no-repeat relative"
       style={{
         backgroundImage: `url(${bgService.src})`,
@@ -20,7 +20,7 @@ const Services: React.FC<ServicesProps> = ({ bgService }) => {
 
       <div className="max-w-6xl mx-auto px-4 relative z-10">
         <h2 className="text-3xl font-bold text-center mb-16 text-white">
-          Bizning xizmatlar
+          Our Services
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div
@@ -32,11 +32,10 @@ const Services: React.FC<ServicesProps> = ({ bgService }) => {
               <Truck className="w-8 h-8 text-white" />
             </div>
             <h3 className="text-xl font-semibold mb-4 text-white">
-              Avtomobil tashish
+              Vehicle Transport
             </h3>
             <p className="text-gray-100">
-              O&apos;zbekiston bo&apos;ylab yuklarni tez va ishonchli yetkazib
-              berish xizmati
+              Fast and reliable delivery service across Uzbekistan
             </p>
           </div>
 
@@ -49,11 +48,9 @@ const Services: React.FC<ServicesProps> = ({ bgService }) => {
               <Globe className="w-8 h-8 text-white" />
             </div>
             <h3 className="text-xl font-semibold mb-4 text-white">
-              Xalqaro tashish
+              International Transport
             </h3>
-            <p className="text-gray-100">
-              Chet eldan va chet elga yuklarni yetkazib berish xizmati
-            </p>
+            <p className="text-gray-100">Delivery service to and from abroad</p>
           </div>
 
           <div
@@ -64,10 +61,8 @@ const Services: React.FC<ServicesProps> = ({ bgService }) => {
             <div className="bg-blue-50/30 w-16 h-16 rounded-lg flex items-center justify-center mb-6 backdrop-blur-sm">
               <Package className="w-8 h-8 text-white" />
             </div>
-            <h3 className="text-xl font-semibold mb-4 text-white">Omborxona</h3>
-            <p className="text-gray-100">
-              Zamonaviy jihozlangan omborxona xizmatlari
-            </p>
+            <h3 className="text-xl font-semibold mb-4 text-white">Warehouse</h3>
+            <p className="text-gray-100">Modern equipped warehouse services</p>
           </div>
         </div>
       </div>

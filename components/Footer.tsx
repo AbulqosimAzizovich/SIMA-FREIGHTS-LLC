@@ -7,16 +7,11 @@ const Footer: React.FC = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">Biz haqimizda</h3>
-            <p>
-              Bizning kompaniya transport va logistika sohasida faoliyat
-              yuritadi.
-            </p>
+            <h3 className="text-xl font-bold mb-4">About Us</h3>
+            <p>Our company operates in the field of transport and logistics.</p>
           </div>
           <div>
-            <h3 className="text-xl font-bold mb-4">
-              Biz bilan bog&apos;laning
-            </h3>
+            <h3 className="text-xl font-bold mb-4">Contact Us</h3>
             <ul className="space-y-4">
               <li className="flex items-center">
                 <PhoneCall className="w-6 h-6 mr-3 text-white" />
@@ -28,12 +23,12 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-center">
                 <MapPin className="w-6 h-6 mr-3 text-white" />
-                Toshkent, O‘zbekiston
+                Tashkent, Uzbekistan
               </li>
             </ul>
           </div>
           <div>
-            <h3 className="text-xl font-bold mb-4">Ijtimoiy tarmoqlar</h3>
+            <h3 className="text-xl font-bold mb-4">Social Media</h3>
             <ul className="space-y-4">
               <li>
                 <a

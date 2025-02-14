@@ -6,13 +6,13 @@ const CallToAction: React.FC = () => {
       <div className="max-w-6xl mx-auto px-4 py-20">
         <div className="text-center" data-aos="fade-up">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-            Ishonchli logistika yechimlar
+            Reliable Logistics Solutions
           </h1>
           <p className="text-xl text-gray-600 mb-8">
-            Yuklaringizni tez va xavfsiz yetkazib beramiz
+            We deliver your goods quickly and safely
           </p>
           <button className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition transform hover:scale-105">
-            Biz bilan bog&apos;laning
+            Contact Us
           </button>
         </div>
       </div>

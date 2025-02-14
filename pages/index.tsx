@@ -49,25 +49,25 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <Head>
-        <title>LogisTrans - Ishonchli logistika xizmatlari</title>
+        <title>LogisTrans - Reliable Logistics Services</title>
         <meta
           name="description"
-          content="O'zbekistonning yetakchi logistika kompaniyasi - LogisTrans. Yuklaringizni tez va xavfsiz yetkazib beramiz."
+          content="Uzbekistan's leading logistics company - LogisTrans. We deliver your goods quickly and safely."
         />
         <meta
           name="keywords"
-          content="logistika, yuk tashish, transport, O'zbekiston, xalqaro yuk tashish"
+          content="logistics, freight, transport, Uzbekistan, international shipping"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         {/* Open Graph */}
         <meta
           property="og:title"
-          content="LogisTrans - Ishonchli logistika xizmatlari"
+          content="LogisTrans - Reliable Logistics Services"
         />
         <meta
           property="og:description"
-          content="O'zbekistonning yetakchi logistika kompaniyasi"
+          content="Uzbekistan's leading logistics company"
         />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/og-image.jpg" />
@@ -76,11 +76,11 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="LogisTrans - Ishonchli logistika xizmatlari"
+          content="LogisTrans - Reliable Logistics Services"
         />
         <meta
           name="twitter:description"
-          content="O'zbekistonning yetakchi logistika kompaniyasi"
+          content="Uzbekistan's leading logistics company"
         />
         <meta name="twitter:image" content="/twitter-image.jpg" />
 
@@ -99,22 +99,22 @@ export default function Home() {
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-8">
               <a
-                href="#xizmatlar"
+                href="#services"
                 className="text-gray-600 hover:text-blue-600 transition"
               >
-                Xizmatlar
+                Services
               </a>
               <a
                 href="#about"
                 className="text-gray-600 hover:text-blue-600 transition"
               >
-                Biz haqimizda
+                About Us
               </a>
               <a
                 href="#contact"
                 className="text-gray-600 hover:text-blue-600 transition"
               >
-                Boglanish
+                Contact
               </a>
             </div>
 
@@ -135,25 +135,25 @@ export default function Home() {
           {isMenuOpen && (
             <div className="md:hidden py-4 space-y-4">
               <a
-                href="#xizmatlar"
+                href="#services"
                 className="block text-gray-600 hover:text-blue-600 transition"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Xizmatlar
+                Services
               </a>
               <a
                 href="#about"
                 className="block text-gray-600 hover:text-blue-600 transition"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Biz haqimizda
+                About Us
               </a>
               <a
                 href="#contact"
                 className="block text-gray-600 hover:text-blue-600 transition"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Boglanish
+                Contact
               </a>
             </div>
           )}
