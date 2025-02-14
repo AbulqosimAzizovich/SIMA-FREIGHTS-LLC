@@ -12,7 +12,7 @@ const CallToAction: React.FC = () => {
             Yuklaringizni tez va xavfsiz yetkazib beramiz
           </p>
           <button className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition transform hover:scale-105">
-            Biz bilan bog'laning
+            Biz bilan bog&apos;laning
           </button>
         </div>
       </div>

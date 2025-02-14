@@ -7,7 +7,7 @@ const ContactForm: React.FC = () => {
         <div className="max-w-md mx-auto">
           <div className="bg-white rounded-xl shadow-lg p-8" data-aos="fade-up">
             <h2 className="text-3xl text-gray-800 font-bold text-center mb-8">
-              Biz bilan bog'laning
+              Biz bilan bog&apos;laning
             </h2>
             <form className="space-y-6">
               <div>

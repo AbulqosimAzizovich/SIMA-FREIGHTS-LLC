@@ -35,8 +35,8 @@ const Services: React.FC<ServicesProps> = ({ bgService }) => {
               Avtomobil tashish
             </h3>
             <p className="text-gray-100">
-              O'zbekiston bo'ylab yuklarni tez va ishonchli yetkazib berish
-              xizmati
+              O&apos;zbekiston bo&apos;ylab yuklarni tez va ishonchli yetkazib
+              berish xizmati
             </p>
           </div>
 

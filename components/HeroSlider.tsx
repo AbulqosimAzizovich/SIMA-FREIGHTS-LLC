@@ -39,7 +39,7 @@ export default function HeroSlider() {
   };
 
   useEffect(() => {
-    const timer = setInterval(nextSlide, 5000); // Har 5 sekundda slide o'zgaradi
+    const timer = setInterval(nextSlide, 5000); // Har 5 sekundda slide o&apos;zgaradi
     return () => clearInterval(timer);
   }, []);
 

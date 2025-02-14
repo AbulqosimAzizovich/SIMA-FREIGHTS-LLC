@@ -14,7 +14,9 @@ const Footer: React.FC = () => {
             </p>
           </div>
           <div>
-            <h3 className="text-xl font-bold mb-4">Biz bilan bog'laning</h3>
+            <h3 className="text-xl font-bold mb-4">
+              Biz bilan bog&apos;laning
+            </h3>
             <ul className="space-y-4">
               <li className="flex items-center">
                 <PhoneCall className="w-6 h-6 mr-3 text-white" />

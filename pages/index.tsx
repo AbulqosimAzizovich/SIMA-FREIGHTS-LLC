@@ -1,22 +1,13 @@
 import { useState, useEffect } from "react";
 import Head from "next/head";
 import AOS from "aos";
-import {
-  PhoneCall,
-  Mail,
-  MapPin,
-  Truck,
-  Globe,
-  Package,
-  Menu,
-  X,
-} from "lucide-react";
-import Image from "next/image";
+import { Menu, X } from "lucide-react";
+// import Image from "next/image";
 import CompanyStats from "../components/CompanyStats";
 import ImageGallery from "../components/ImageGallery";
 import CallToAction from "../components/CallToAction";
 import Services from "../components/Services";
-import ContactForm from "../components/ContactForm";
+// import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
 import HeroSlider from "../components/HeroSlider";
 import LoadingSpinner from "../components/Spinner";
@@ -123,7 +114,7 @@ export default function Home() {
                 href="#contact"
                 className="text-gray-600 hover:text-blue-600 transition"
               >
-                Bog'lanish
+                Boglanish
               </a>
             </div>
 
@@ -162,7 +153,7 @@ export default function Home() {
                 className="block text-gray-600 hover:text-blue-600 transition"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Bog'lanish
+                Boglanish
               </a>
             </div>
           )}
