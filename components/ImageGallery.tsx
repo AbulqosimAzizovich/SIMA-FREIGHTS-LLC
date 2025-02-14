@@ -3,7 +3,6 @@ import Image from "next/image";
 
 import img1 from "../public/2.jpg";
 
-
 const ImageGallery: React.FC = () => {
   return (
     // <div className="py-20 bg-gray-50">
@@ -40,6 +39,7 @@ const ImageGallery: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {"123456".split("").map((item) => (
             <div
+              key={item}
               className="relative h-64 rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition duration-300"
               data-aos="fade-up"
               data-aos-delay={100}
