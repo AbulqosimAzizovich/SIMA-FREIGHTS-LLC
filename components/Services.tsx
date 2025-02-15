@@ -32,7 +32,7 @@ const Services: React.FC<ServicesProps> = ({ bgService }) => {
               <Truck className="w-8 h-8 text-white" />
             </div>
             <h3 className="text-xl font-semibold mb-4 text-white">
-              Vehicle Transport
+              Truck Transport
             </h3>
             <p className="text-gray-100">
               Fast and reliable delivery service across Uzbekistan
@@ -48,7 +48,7 @@ const Services: React.FC<ServicesProps> = ({ bgService }) => {
               <Globe className="w-8 h-8 text-white" />
             </div>
             <h3 className="text-xl font-semibold mb-4 text-white">
-              International Transport
+              USA trasportation
             </h3>
             <p className="text-gray-100">Delivery service to and from abroad</p>
           </div>

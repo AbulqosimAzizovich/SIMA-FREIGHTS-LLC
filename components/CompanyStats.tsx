@@ -11,7 +11,7 @@ const CompanyStats: React.FC = () => {
           </div>
           <div className="p-6" data-aos="fade-up" data-aos-delay="200">
             <h3 className="text-4xl font-bold text-blue-600 mb-2">100+</h3>
-            <p className="text-gray-600">Vehicles</p>
+            <p className="text-gray-600">Trucks</p>
           </div>
           <div className="p-6" data-aos="fade-up" data-aos-delay="300">
             <h3 className="text-4xl font-bold text-blue-600 mb-2">15+</h3>

@@ -8,7 +8,7 @@ import img3 from "../public/3.jpg";
 const slides = [
   {
     id: 1,
-    title: "International Freight Service",
+    title: "USA Freight Service",
     description: "We deliver your goods reliably to any point in the world",
     image: img1,
   },

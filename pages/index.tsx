@@ -56,7 +56,7 @@ export default function Home() {
         />
         <meta
           name="keywords"
-          content="logistics, freight, transport, Uzbekistan, international shipping"
+          content="logistics, freight, transport, Uzbekistan, USA trasportation shipping"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
