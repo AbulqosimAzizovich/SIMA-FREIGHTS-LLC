@@ -52,11 +52,11 @@ export default function Home() {
         <title>LogisTrans - Reliable Logistics Services</title>
         <meta
           name="description"
-          content="Uzbekistan's leading logistics company - LogisTrans. We deliver your goods quickly and safely."
+          content="USA's leading logistics company - LogisTrans. We deliver your goods quickly and safely."
         />
         <meta
           name="keywords"
-          content="logistics, freight, transport, Uzbekistan, USA trasportation shipping"
+          content="logistics, freight, transport, USA, USA trasportation shipping"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -67,7 +67,7 @@ export default function Home() {
         />
         <meta
           property="og:description"
-          content="Uzbekistan's leading logistics company"
+          content="USA's leading logistics company"
         />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/og-image.jpg" />
@@ -80,7 +80,7 @@ export default function Home() {
         />
         <meta
           name="twitter:description"
-          content="Uzbekistan's leading logistics company"
+          content="USA's leading logistics company"
         />
         <meta name="twitter:image" content="/twitter-image.jpg" />
 

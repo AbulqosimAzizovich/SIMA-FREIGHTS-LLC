@@ -20,7 +20,7 @@ const Services: React.FC<ServicesProps> = ({ bgService }) => {
 
       <div className="max-w-6xl mx-auto px-4 relative z-10">
         <h2 className="text-3xl font-bold text-center mb-16 text-white">
-          Our Services
+          Recruiting Service
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div
@@ -35,7 +35,7 @@ const Services: React.FC<ServicesProps> = ({ bgService }) => {
               Truck Transport
             </h3>
             <p className="text-gray-100">
-              Fast and reliable delivery service across Uzbekistan
+              Fast and reliable delivery service across USA
             </p>
           </div>
 

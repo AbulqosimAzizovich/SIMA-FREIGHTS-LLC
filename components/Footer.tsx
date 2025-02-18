@@ -14,16 +14,23 @@ const Footer: React.FC = () => {
             <h3 className="text-xl font-bold mb-4">Contact Us</h3>
             <ul className="space-y-4">
               <li className="flex items-center">
-                <PhoneCall className="w-6 h-6 mr-3 text-white" />
-                +1 (513) 757-1045
+                <a className="flex items-center" href="tel:+1 (513) 757-1045">
+                  <PhoneCall className="w-6 h-6 mr-3 text-white" />
+                  +1 (513) 757-1045
+                </a>
               </li>
               <li className="flex items-center">
-                <Mail className="w-6 h-6 mr-3 text-white" />
-                info@logistrans.com
+                <a
+                  className="flex items-center"
+                  href="mailto:recruiting@simafreights.com"
+                >
+                  <Mail className="w-6 h-6 mr-3 text-white" />
+                  recruiting@simafreights.com
+                </a>
               </li>
               <li className="flex items-center">
                 <MapPin className="w-6 h-6 mr-3 text-white" />
-                Tashkent, Uzbekistan
+                Loveland OH 45140
               </li>
             </ul>
           </div>
