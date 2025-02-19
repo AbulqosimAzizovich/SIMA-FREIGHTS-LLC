@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-4">
               <li>
                 <a
-                  href="https://www.facebook.com/logistrans"
+                  href="https://www.facebook.com/profile.php?id=100082251435862"
                   className="text-white hover:text-gray-400"
                 >
                   Facebook
@@ -47,7 +47,7 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <a
-                  href="https://www.instagram.com/logistrans"
+                  href="https://www.instagram.com/simafreights?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"
                   className="text-white hover:text-gray-400"
                 >
                   Instagram
