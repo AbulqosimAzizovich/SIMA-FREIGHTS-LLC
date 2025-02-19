@@ -20,5 +20,5 @@ To run this project locally, follow these steps:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/username/logistrans.git
+git clone https://github.com/AbulqosimAzizovich/SIMA-FREIGHTS-LLC
 ```
