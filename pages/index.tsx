@@ -205,9 +205,9 @@ export default function Home() {
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              At SIMA FREIGHTS LLC, we're committed to supporting truck drivers
-              with comprehensive services designed to make your job easier and
-              more profitable.
+              At SIMA FREIGHTS LLC, we&apos;re committed to supporting truck
+              drivers with comprehensive services designed to make your job
+              easier and more profitable.
             </p>
           </div>
 
@@ -358,8 +358,8 @@ export default function Home() {
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              We're a driver-focused trucking company committed to creating the
-              best possible environment for professional truck drivers.
+              We&apos;re a driver-focused trucking company committed to creating
+              the best possible environment for professional truck drivers.
             </p>
           </div>
 
@@ -401,9 +401,10 @@ export default function Home() {
 
               <div className="bg-white p-6 rounded-lg">
                 <p className="italic text-gray-800 mb-4">
-                  "I've been with SIMA FREIGHTS for over 3 years now. The
-                  consistent miles and respect I get from the team makes this
-                  the best company I've driven for in my 15-year career."
+                  &quot;I&apos;ve been with SIMA FREIGHTS for over 3 years now.
+                  The consistent miles and respect I get from the team makes
+                  this the best company I&apos;ve driven for in my 15-year
+                  career.&quot;
                 </p>
                 <p className="font-semibold text-gray-800">
                   - Michael T., Professional Driver
@@ -412,9 +413,9 @@ export default function Home() {
 
               <div className="bg-white p-6 rounded-lg">
                 <p className="italic text-gray-800 mb-4">
-                  "What I appreciate most is the 24/7 support. When I've had
-                  issues on the road, the dispatch team is always there to help,
-                  no matter what time it is."
+                  &quot;What I appreciate most is the 24/7 support. When
+                  I&apos;ve had issues on the road, the dispatch team is always
+                  there to help, no matter what time it is.&quot;
                 </p>
                 <p className="font-semibold text-gray-800">
                   - Sarah K., Team Driver
