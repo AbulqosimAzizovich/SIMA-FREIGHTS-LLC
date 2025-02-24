@@ -41,7 +41,12 @@ export default function HeroSlider() {
     const timer = setInterval(nextSlide, 5000); // Slide changes every 5 seconds
     return () => clearInterval(timer);
   }, []);
-
+  const scrollToSection = () => {
+    const element = document.getElementById("about");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div className="relative h-screen min-h-[600px] w-full overflow-hidden bg-gray-900">
       {/* Slides */}
@@ -80,7 +85,10 @@ export default function HeroSlider() {
                 <p className="text-xl text-gray-200 mb-8">
                   {slide.description}
                 </p>
-                <button className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition transform hover:scale-105">
+                <button
+                  onClick={() => scrollToSection()}
+                  className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition transform hover:scale-105"
+                >
                   Learn More
                 </button>
               </div>
