@@ -106,39 +106,45 @@ export default function Home() {
       <nav className="fixed w-full bg-white shadow-lg z-50">
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex justify-between items-center py-4">
-            <div
-              onClick={() => scrollToTop()}
+            <a
+              href="#top"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToTop();
+              }}
               className="text-xl font-bold text-blue-600 cursor-pointer"
+              aria-label="SIMA FREIGHTS LLC - Back to top"
             >
               SIMA FREIGHTS LLC
-            </div>
+            </a>
 
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-8">
-              <a
-                onClick={() => scrollToSection("services")}
-                className="text-gray-600 hover:text-blue-600 transition cursor-pointer"
-              >
-                Services
-              </a>
-              <a
-                onClick={() => scrollToSection("about")}
-                className="text-gray-600 hover:text-blue-600 transition cursor-pointer"
-              >
-                About Us
-              </a>
-              <a
-                onClick={() => scrollToSection("footer")}
-                className="text-gray-600 hover:text-blue-600 transition cursor-pointer"
-              >
-                Contact
-              </a>
+              {[
+                { id: "services", label: "Services" },
+                { id: "about", label: "About Us" },
+                { id: "footer", label: "Contact" },
+              ].map((item) => (
+                <a
+                  key={item.id}
+                  href={`#${item.id}`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    scrollToSection(item.id);
+                  }}
+                  className="text-gray-600 hover:text-blue-600 transition cursor-pointer"
+                >
+                  {item.label}
+                </a>
+              ))}
             </div>
 
             {/* Mobile Menu Button */}
             <button
               className="md:hidden"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              onClick={() => setIsMenuOpen((prev) => !prev)}
+              aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+              aria-expanded={isMenuOpen}
             >
               {isMenuOpen ? (
                 <X className="h-6 w-6 text-gray-600" />
@@ -151,34 +157,24 @@ export default function Home() {
           {/* Mobile Menu */}
           {isMenuOpen && (
             <div className="md:hidden py-4 space-y-4">
-              <a
-                className="block text-gray-600 hover:text-blue-600 transition"
-                onClick={() => {
-                  setIsMenuOpen(false);
-                  scrollToSection("services");
-                }}
-              >
-                Services
-              </a>
-              <a
-                className="block text-gray-600 hover:text-blue-600 transition"
-                onClick={() => {
-                  setIsMenuOpen(false);
-                  scrollToSection("about");
-                }}
-              >
-                About Us
-              </a>
-              <a
-                href="#contact"
-                className="block text-gray-600 hover:text-blue-600 transition"
-                onClick={() => {
-                  setIsMenuOpen(false);
-                  scrollToSection("services");
-                }}
-              >
-                Contact
-              </a>
+              {[
+                { id: "services", label: "Services" },
+                { id: "about", label: "About Us" },
+                { id: "footer", label: "Contact" },
+              ].map((item) => (
+                <a
+                  key={item.id}
+                  href={`#${item.id}`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setIsMenuOpen(false);
+                    scrollToSection(item.id);
+                  }}
+                  className="block text-gray-600 hover:text-blue-600 transition"
+                >
+                  {item.label}
+                </a>
+              ))}
             </div>
           )}
         </div>

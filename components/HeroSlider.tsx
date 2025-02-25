@@ -41,14 +41,20 @@ export default function HeroSlider() {
     const timer = setInterval(nextSlide, 5000); // Slide changes every 5 seconds
     return () => clearInterval(timer);
   }, []);
+
   const scrollToSection = () => {
     const element = document.getElementById("about");
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
+
   return (
-    <div className="relative h-screen min-h-[600px] w-full overflow-hidden bg-gray-900">
+    <div
+      className="relative h-screen min-h-[600px] w-full overflow-hidden bg-gray-900"
+      role="region"
+      aria-label="Hero Image Slider"
+    >
       {/* Slides */}
       <div className="relative h-full">
         {slides.map((slide, index) => (
@@ -56,6 +62,7 @@ export default function HeroSlider() {
             key={slide.id}
             className={`absolute top-0 left-0 w-full h-full transition-opacity duration-1000 ease-in-out
               ${index === currentSlide ? "opacity-100" : "opacity-0"}`}
+            aria-hidden={index !== currentSlide}
           >
             {/* Image */}
             <div className="absolute inset-0">
@@ -64,6 +71,7 @@ export default function HeroSlider() {
                 alt={slide.title}
                 fill
                 className="object-cover"
+                priority={index === 0}
               />
               {/* Black gradient overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/50 to-transparent" />
@@ -79,15 +87,16 @@ export default function HeroSlider() {
                       : "translate-y-10 opacity-0"
                   }`}
               >
-                <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+                <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
                   {slide.title}
-                </h1>
+                </h2>
                 <p className="text-xl text-gray-200 mb-8">
                   {slide.description}
                 </p>
                 <button
-                  onClick={() => scrollToSection()}
-                  className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition transform hover:scale-105"
+                  onClick={scrollToSection}
+                  className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition transform hover:scale-105 min-h-[48px] min-w-[120px]"
+                  aria-label="Learn more about our services"
                 >
                   Learn More
                 </button>
@@ -101,26 +110,41 @@ export default function HeroSlider() {
       <div className="absolute bottom-8 left-0 right-0 flex justify-center items-center gap-4">
         <button
           onClick={prevSlide}
-          className="p-2 rounded-full bg-gray-800/50 hover:bg-gray-800 transition text-white"
+          className="p-3 rounded-full bg-gray-800/50 hover:bg-gray-800 transition text-white min-h-[48px] min-w-[48px] flex items-center justify-center"
+          aria-label="Previous slide"
         >
           <ChevronLeft className="w-6 h-6" />
         </button>
 
         {/* Indicators */}
-        <div className="flex gap-2">
+        <div
+          className="flex gap-3"
+          role="tablist"
+          aria-label="Slide indicators"
+        >
           {slides.map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrentSlide(index)}
-              className={`w-3 h-3 rounded-full transition-all
-                ${index === currentSlide ? "bg-blue-600 w-6" : "bg-gray-400"}`}
-            />
+              className={`min-h-[44px] min-w-[44px] p-2 flex items-center justify-center transition-all`}
+              aria-label={`Go to slide ${index + 1}`}
+              aria-selected={index === currentSlide}
+              role="tab"
+            >
+              <span
+                className={`block h-3 rounded-full transition-all
+                ${
+                  index === currentSlide ? "bg-blue-600 w-6" : "bg-gray-400 w-3"
+                }`}
+              />
+            </button>
           ))}
         </div>
 
         <button
           onClick={nextSlide}
-          className="p-2 rounded-full bg-gray-800/50 hover:bg-gray-800 transition text-white"
+          className="p-3 rounded-full bg-gray-800/50 hover:bg-gray-800 transition text-white min-h-[48px] min-w-[48px] flex items-center justify-center"
+          aria-label="Next slide"
         >
           <ChevronRight className="w-6 h-6" />
         </button>
