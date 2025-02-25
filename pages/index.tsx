@@ -60,7 +60,6 @@ export default function Home() {
     });
   };
 
-
   return (
     <div className="min-h-screen">
       <Head>
@@ -211,7 +210,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Service 1 */}
             <div
               className="bg-white rounded-lg shadow-md p-6"
@@ -305,38 +304,6 @@ export default function Home() {
                 Modern, well-maintained truck fleet. Regular preventative
                 maintenance scheduling. Roadside assistance coverage and
                 equipment upgrade options.
-              </p>
-            </div>
-
-            {/* Service 4 */}
-            <div
-              className="bg-white rounded-lg shadow-md p-6"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              <div className="text-blue-600 mb-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-12 w-12"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-xl text-gray-600 font-semibold mb-2">
-                Training & Compliance
-              </h3>
-              <p className="text-gray-600">
-                Safety training and certification programs. DOT compliance
-                assistance. Hours of Service (HOS) management and ongoing
-                professional development.
               </p>
             </div>
           </div>
