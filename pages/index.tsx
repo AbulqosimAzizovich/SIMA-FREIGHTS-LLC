@@ -121,7 +121,7 @@ export default function Home() {
             {/* Desktop Menu */}
             <div className="hidden md:flex space-x-8">
               {[
-                { id: "services", label: "Services" },
+                { id: "footer", label: "Services" },
                 { id: "footer", label: "About Us" },
                 { id: "footer", label: "Contact" },
               ].map((item) => (
@@ -158,7 +158,7 @@ export default function Home() {
           {isMenuOpen && (
             <div className="md:hidden py-4 space-y-4">
               {[
-                { id: "services", label: "Services" },
+                { id: "footer", label: "Services" },
                 { id: "footer", label: "About Us" },
                 { id: "footer", label: "Contact" },
               ].map((item) => (
