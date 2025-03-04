@@ -122,7 +122,7 @@ export default function Home() {
             <div className="hidden md:flex space-x-8">
               {[
                 { id: "services", label: "Services" },
-                { id: "about", label: "About Us" },
+                { id: "footer", label: "About Us" },
                 { id: "footer", label: "Contact" },
               ].map((item) => (
                 <a
@@ -159,7 +159,7 @@ export default function Home() {
             <div className="md:hidden py-4 space-y-4">
               {[
                 { id: "services", label: "Services" },
-                { id: "about", label: "About Us" },
+                { id: "footer", label: "About Us" },
                 { id: "footer", label: "Contact" },
               ].map((item) => (
                 <a

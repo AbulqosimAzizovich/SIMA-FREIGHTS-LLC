@@ -53,14 +53,6 @@ const Footer: React.FC = () => {
                   Instagram
                 </a>
               </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/company/logistrans"
-                  className="text-white hover:text-gray-400"
-                >
-                  LinkedIn
-                </a>
-              </li>
             </ul>
           </div>
         </div>

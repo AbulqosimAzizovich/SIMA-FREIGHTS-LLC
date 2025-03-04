@@ -8,20 +8,23 @@ import img3 from "../public/3.jpg";
 const slides = [
   {
     id: 1,
-    title: "USA Freight Service",
-    description: "We deliver your goods reliably to any point in the world",
+    title: "Special Partner Program",
+    description:
+      "If you bring at least 3 owner operators, your service fee will be 11%.",
     image: img1,
   },
   {
     id: 2,
-    title: "Fast and Quality Logistics",
-    description: "Deliver your goods quickly through optimal routes",
+    title: "Truck Financing Support",
+    description:
+      "Moreover, we can pay a down payment of 50%  if you want to buy another truck",
     image: img2,
   },
   {
     id: 3,
-    title: "24/7 Customer Service",
-    description: "Our professional specialists are always at your service",
+    title: "Rewards Program",
+    description:
+      "Apart from that, you will get a cashback of up to 1% if you work with us for 6 months and make a gross of $200k",
     image: img3,
   },
 ];
