@@ -8,7 +8,20 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4">About Us</h3>
-            <p>Our company operates in the field of transport and logistics.</p>
+            <ul className="space-y-4">
+              <li className="flex items-center">
+                <p>
+                  Founded with a driver-first approach, SIMA FREIGHTS LLC has
+                  been dedicated to creating the most driver-friendly logistics
+                  company in the USA. Our growth story is built on strong
+                  relationships with professional drivers who trust us to
+                  provide fair compensation, consistent miles, and excellent
+                  support. We value driver safety, professional respect, and
+                  work-life balance. Our team understands the challenges of life
+                  on the road because many of us have been drivers ourselves.
+                </p>
+              </li>
+            </ul>
           </div>
           <div>
             <h3 className="text-xl font-bold mb-4">Contact Us</h3>
